@@ -1,0 +1,93 @@
+.cntPrincipal {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #314755;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cntResultado {
+    width: 100%;
+    overflow: hidden;
+}
+
+a#resultado {
+    color: #c1b8c0;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 31px;
+    color: #f2f2f2;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 strong, h4 strong {
+    font-weight: 700;
+}
+
+#copyLink .material-icons {
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+}
+
+#copyLink {
+    position: relative;
+    display: inline-block;
+}
+
+a#copyLink {
+    height: 0;
+    width: 0;
+}
+
+#copyLink .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 75%;
+    margin-bottom: 54px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#copyLink .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+#copyLink:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
