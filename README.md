@@ -3,6 +3,7 @@
 Simple página para acortar algún URL, la puedes encontrar [AQUÍ](https://acortadorurl.onrender.com/)
 
 ## Antes de ejecutar la página ❗
+Si quieres descargar el repositorio y ejecutarlo en tu propio entorno ten en cuenta que:
 - Contar con una base de datos de MongoDB (se puede utilizar Atlas)
 - Crear un archivo .env en donde se definen las siguientes variables de entorno necesarias para el programa:
 ```
