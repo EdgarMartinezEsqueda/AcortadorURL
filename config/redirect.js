@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
         client.db("URLShort").collection("links").findOne({short: req.params.enlace}, (err, result) => {  // find link data
             if(err) throw err;
             if(result) res.redirect(result.enlace);    // redirect to link
-                else res.redirect("/");            // redirect to index
+            else res.redirect("/");            // redirect to index
         });
     });
 };

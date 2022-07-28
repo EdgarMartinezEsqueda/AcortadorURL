@@ -10,7 +10,7 @@ $acortar.addEventListener("click", (e) => {
     $spinner.classList.remove("visually-hidden");   // show spinner
 });
 
-// The first time when somebody enter to the page, this components doesn't exist
+// The first time when somebody enter to the page, this components doesn't exist so this code is for not get any error
 try{
     // Copy link button
     $copy.addEventListener("click", (e) => {
